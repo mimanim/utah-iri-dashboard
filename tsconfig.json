@@ -1,0 +1,8 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "lib": ["dom", "es2020"],
+    "esModuleInterop": true,
+    "jsx": "react"
+  }
+}

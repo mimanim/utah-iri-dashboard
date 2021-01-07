@@ -1,0 +1,28 @@
+name: build-test
+
+on:
+  pull_request:
+    paths-ignore:
+      - "**.md"
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Clean up code
+        run: npm run clean
+      - name: Build app
+        run: npm run build

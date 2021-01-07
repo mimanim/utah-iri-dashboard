@@ -1,0 +1,69 @@
+{
+  "name": "react-starter",
+  "version": "0.0.0",
+  "description": "A simple starter application for React.",
+  "author": "Sean McMenamin <16652523+mimanim@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "clean": "npm run lint && npm run format && npm audit --check"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^17.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "dotenv-webpack": "^5.1.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "fork-ts-checker-webpack-plugin": "^6.0.3",
+    "html-webpack-plugin": "^5.0.0-alpha.14",
+    "prettier": "^2.2.0",
+    "react-hot-loader": "^4.13.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "typescript-plugin-styled-components": "^1.4.4",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "eslintIgnore": [
+    "dist",
+    "node_modules",
+    "webpack.config.js"
+  ]
+}

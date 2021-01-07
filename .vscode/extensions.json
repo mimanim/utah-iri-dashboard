@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "bierner.markdown-preview-github-styles",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "mgmcdermott.vscode-language-babel",
+    "mikestead.dotenv"
+  ]
+}
