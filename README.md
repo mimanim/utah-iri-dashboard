@@ -2,7 +2,9 @@
 
 [![Actions Status](https://github.com/mimanim/utah-iri-dashboard/workflows/build-test/badge.svg)](https://github.com/mimanim/utah-iri-dashboard/actions)
 
-A dashboard for visualizing the results of UDOT's 2018 International Roughness Index road segment survey.
+A dashboard for visualizing the results of UDOT's 2018 [International Roughness Index](https://en.wikipedia.org/wiki/International_roughness_index) road segment survey.
+
+**Source:** [UDOT, Deighton Total Infrastructure Management System](https://digitaldelivery.udot.utah.gov/datasets/9a7f3dfbda7f4921a71154eae6bac867_0?orderBy=Field14&orderByAsc=false)
 
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
