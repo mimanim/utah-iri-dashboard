@@ -67,7 +67,7 @@ const MapComponent = (): JSX.Element => {
             }-${i.object.properties.To_}\n\n2018 IRI: ${
               i.object.properties.IRI_2018
             } (${iriValueToCategory(i.object.properties.IRI_2018)})`
-          : null
+          : (null as any)
       }
       initialViewState={INITIAL_VIEW_STATE}
       layers={layers}

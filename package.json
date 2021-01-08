@@ -1,7 +1,7 @@
 {
-  "name": "react-starter",
-  "version": "0.0.0",
-  "description": "A simple starter application for React.",
+  "name": "utah-iri-dashboard",
+  "version": "0.1.0",
+  "description": "A dashboard for visualizing the results of UDOT's 2018 International Roughness Index road segment survey.",
   "author": "Sean McMenamin <16652523+mimanim@users.noreply.github.com>",
   "license": "MIT",
   "private": true,

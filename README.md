@@ -1,8 +1,8 @@
-# React starter
+# Utah IRI Dashboard
 
-[![Actions Status](https://github.com/mimanim/react-starter/workflows/build-test/badge.svg)](https://github.com/mimanim/react-starter/actions)
+[![Actions Status](https://github.com/mimanim/utah-iri-dashboard/workflows/build-test/badge.svg)](https://github.com/mimanim/utah-iri-dashboard/actions)
 
-A simple starter application for React.
+A dashboard for visualizing the results of UDOT's 2018 International Roughness Index road segment survey.
 
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
@@ -17,11 +17,11 @@ A simple starter application for React.
 ## Setup
 
 ```sh
-git clone git@github.com:mimanim/react-starter.git
+git clone git@github.com:mimanim/utah-iri-dashboard.git
 ```
 
 ```sh
-cd react-starter
+cd utah-iri-dashboard
 ```
 
 ```sh
@@ -51,13 +51,3 @@ npm run format # Runs the formatter(s) on the source code.
 ```sh
 npm run clean # Combines "lint", "format", and "npm audit". Called by GitHub Actions on main branch.
 ```
-
-## Todo
-
-- Add unit testing support.
-- Add browser targeting with polyfills.
-- Add browser testing support.
-- Add GraphQL backend support.
-- Add auth support.
-- Add multi-window support.
-- Add UI framework.
