@@ -4,12 +4,12 @@
 
 A dashboard for visualizing the results of UDOT's 2018 [International Roughness Index](https://en.wikipedia.org/wiki/International_roughness_index) road segment survey.
 
-**Source:** [UDOT, Deighton Total Infrastructure Management System](https://digitaldelivery.udot.utah.gov/datasets/9a7f3dfbda7f4921a71154eae6bac867_0?orderBy=Field14&orderByAsc=false)
-
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Scripts](#scripts)
 - [Todo](#todo)
+
+**Source:** [UDOT, Deighton Total Infrastructure Management System](https://digitaldelivery.udot.utah.gov/datasets/9a7f3dfbda7f4921a71154eae6bac867_0?orderBy=Field14&orderByAsc=false)
 
 ## Prerequisites
 

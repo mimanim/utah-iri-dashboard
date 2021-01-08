@@ -4,7 +4,7 @@ import MapController from "@deck.gl/react";
 import React, { useEffect, useState } from "react";
 import { StaticMap } from "react-map-gl";
 
-import { iriValueToCategory, iriValueToLineColor } from "../helpers";
+import { iriValueToCategory, iriValueToRoadColor } from "../helpers";
 
 const INITIAL_VIEW_STATE = {
   longitude: -111.0937,
@@ -46,7 +46,7 @@ const MapComponent = (): JSX.Element => {
       pickable: true,
       lineWidthMinPixels: 1.5,
       getFillColor: [160, 160, 180, 200],
-      getLineColor: (d) => iriValueToLineColor(d.properties.IRI_2018),
+      getLineColor: (d) => iriValueToRoadColor(d.properties.IRI_2018),
       getLineWidth: 10,
     }),
   ];
@@ -62,11 +62,11 @@ const MapComponent = (): JSX.Element => {
       controller
       getTooltip={(i) =>
         i.object
-          ? `Route ${parseInt(i.object.properties.Route, 10)}\nMM ${
-              i.object.properties.From_
-            }-${i.object.properties.To_}\n\n2018 IRI: ${
-              i.object.properties.IRI_2018
-            } (${iriValueToCategory(i.object.properties.IRI_2018)})`
+          ? `Route ${parseInt((i.object as any).properties.Route, 10)}\nMM ${
+              (i.object as any).properties.From_
+            }-${(i.object as any).properties.To_}\n\n2018 IRI: ${
+              (i.object as any).properties.IRI_2018
+            } (${iriValueToCategory((i.object as any).properties.IRI_2018)})`
           : (null as any)
       }
       initialViewState={INITIAL_VIEW_STATE}
