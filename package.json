@@ -16,7 +16,7 @@
     "@deck.gl/core": "^8.3.12",
     "@deck.gl/layers": "^8.3.12",
     "@deck.gl/react": "^8.3.12",
-    "d3-interpolate": "^2.0.1",
+    "d3-interpolate": "^3.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-map-gl": "^6.0.2",
